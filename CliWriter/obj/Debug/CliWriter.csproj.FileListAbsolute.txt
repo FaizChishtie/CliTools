@@ -1,0 +1,7 @@
+C:\Users\Faizaan Chishtie\Desktop\Dev Folder\viscstest\CliWriter\CliWriter\bin\Debug\CliWriter.exe.config
+C:\Users\Faizaan Chishtie\Desktop\Dev Folder\viscstest\CliWriter\CliWriter\bin\Debug\CliWriter.exe
+C:\Users\Faizaan Chishtie\Desktop\Dev Folder\viscstest\CliWriter\CliWriter\bin\Debug\CliWriter.pdb
+C:\Users\Faizaan Chishtie\Desktop\Dev Folder\viscstest\CliWriter\CliWriter\obj\Debug\CliWriter.csprojAssemblyReference.cache
+C:\Users\Faizaan Chishtie\Desktop\Dev Folder\viscstest\CliWriter\CliWriter\obj\Debug\CliWriter.csproj.CoreCompileInputs.cache
+C:\Users\Faizaan Chishtie\Desktop\Dev Folder\viscstest\CliWriter\CliWriter\obj\Debug\CliWriter.exe
+C:\Users\Faizaan Chishtie\Desktop\Dev Folder\viscstest\CliWriter\CliWriter\obj\Debug\CliWriter.pdb

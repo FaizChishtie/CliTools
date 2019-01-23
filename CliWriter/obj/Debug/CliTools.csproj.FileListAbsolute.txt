@@ -1,0 +1,15 @@
+C:\Users\Faizaan Chishtie\Desktop\Dev Folder\viscstest\CliWriter\CliWriter\bin\Debug\CliWriter.exe.config
+C:\Users\Faizaan Chishtie\Desktop\Dev Folder\viscstest\CliWriter\CliWriter\bin\Debug\CliWriter.exe
+C:\Users\Faizaan Chishtie\Desktop\Dev Folder\viscstest\CliWriter\CliWriter\bin\Debug\CliWriter.pdb
+C:\Users\Faizaan Chishtie\Desktop\Dev Folder\viscstest\CliWriter\CliWriter\obj\Debug\CliTools.csproj.CoreCompileInputs.cache
+C:\Users\Faizaan Chishtie\Desktop\Dev Folder\viscstest\CliWriter\CliWriter\obj\Debug\CliWriter.exe
+C:\Users\Faizaan Chishtie\Desktop\Dev Folder\viscstest\CliWriter\CliWriter\obj\Debug\CliWriter.pdb
+C:\Users\Faizaan Chishtie\Desktop\Dev Folder\viscstest\CliWriter\CliWriter\obj\Debug\CliTools.csprojAssemblyReference.cache
+C:\Users\Faizaan Chishtie\Desktop\Dev Folder\CliProjects\CliWriter\CliWriter\bin\Debug\CliWriter.exe.config
+C:\Users\Faizaan Chishtie\Desktop\Dev Folder\CliProjects\CliWriter\CliWriter\bin\Debug\CliWriter.xml
+C:\Users\Faizaan Chishtie\Desktop\Dev Folder\CliProjects\CliWriter\CliWriter\bin\Debug\CliWriter.exe
+C:\Users\Faizaan Chishtie\Desktop\Dev Folder\CliProjects\CliWriter\CliWriter\bin\Debug\CliWriter.pdb
+C:\Users\Faizaan Chishtie\Desktop\Dev Folder\CliProjects\CliWriter\CliWriter\obj\Debug\CliTools.csprojAssemblyReference.cache
+C:\Users\Faizaan Chishtie\Desktop\Dev Folder\CliProjects\CliWriter\CliWriter\obj\Debug\CliTools.csproj.CoreCompileInputs.cache
+C:\Users\Faizaan Chishtie\Desktop\Dev Folder\CliProjects\CliWriter\CliWriter\obj\Debug\CliWriter.exe
+C:\Users\Faizaan Chishtie\Desktop\Dev Folder\CliProjects\CliWriter\CliWriter\obj\Debug\CliWriter.pdb
