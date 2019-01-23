@@ -1,0 +1,239 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CliWriter</name>
+    </assembly>
+    <members>
+        <member name="T:CliToolSpace.ErrorHandler">
+            <summary>
+            ErrorHandler class deals with parameter checking through CliToolSpace
+            </summary>
+        </member>
+        <member name="M:CliToolSpace.ErrorHandler.PathCheck(System.String)">
+            <summary>
+            PathCheck method checks if path is null or empty
+            </summary>
+            <param name="path">String containing path</param>
+        </member>
+        <member name="T:CliToolSpace.Cli">
+             <summary>
+
+             </summary>
+        </member>
+        <member name="M:CliToolSpace.Cli.#ctor">
+            <summary>
+            Constructor for Cli class, initializes ArrayList
+            </summary>
+        </member>
+        <member name="M:CliToolSpace.Cli.StoreCommand(CliToolSpace.Command)">
+            <summary>
+            StoreCommand method adds command to ArrayList
+            </summary>
+            <param name="cmnd">Command to be added to ArrayList</param>
+        </member>
+        <member name="M:CliToolSpace.Cli.ToCommand">
+            <summary>
+            ToCommand converts current ArrayList to a command object.
+            </summary>
+            <returns>Returns a Command object</returns>
+        </member>
+        <member name="M:CliToolSpace.Cli.ToFile(System.String,System.Boolean,System.String)">
+            <summary>
+            ToFile takes current ArrayList and converts it to a file
+            </summary>
+            <param name="directory">Directory to store file</param>
+            <param name="log">Boolean to determine if action is to be logged</param>
+            <param name="filename">Filename to write to</param>
+        </member>
+        <member name="M:CliToolSpace.Cli.FileToCli(System.String)">
+            <summary>
+            FileToCli parses a file to Cli ArrayList
+            </summary>
+            <param name="path">Path to given file</param>
+        </member>
+        <member name="M:CliToolSpace.Cli.cd(System.String)">
+            <summary>
+            cd command acts as actual cd command in cli.
+            </summary>
+            <param name="directory">Directory to navigate to</param>
+            <returns>Returns new command object with command for executability.</returns>
+        </member>
+        <member name="M:CliToolSpace.Cli.ls">
+            <summary>
+            ls command acts like dir in cli
+            </summary>
+            <returns>Returns new command object with command</returns>
+        </member>
+        <member name="M:CliToolSpace.Cli.Execute(System.Boolean)">
+            <summary>
+            Execute method executes commands from cmndAL.
+            </summary>
+            <param name="cmnd">Command object to be executed</param>
+            <param name="pause">Boolean adds pause at the end of execution if true</param>
+        </member>
+        <member name="M:CliToolSpace.Cli.ExecuteIndividual(CliToolSpace.Command,System.Boolean)">
+            <summary>
+            Execute method executes a given command. Calls Hidden or Visible based on the boolean value of command.
+            </summary>
+            <param name="cmnd">Command object to be executed</param>
+            <param name="pause">Boolean adds pause at the end of execution if true</param>
+        </member>
+        <member name="M:CliToolSpace.Cli.ExecuteCommandHidden(CliToolSpace.Command,System.Boolean)">
+            <summary>
+            ExecuteCommandHidden hides cmd when executing command.
+            </summary>
+            <param name="cmnd">Command object to be executed</param>
+            <param name="pause">Boolean adds pause at the end of execution if true</param>
+        </member>
+        <member name="M:CliToolSpace.Cli.ExecuteCommandVisible(CliToolSpace.Command,System.Boolean)">
+            <summary>
+            ExecuteCommandVisible shows cmd when executing command.
+            </summary>
+            <param name="cmnd">Command object to be executed</param>
+            <param name="pause">Boolean adds pause at the end of execution if true</param>
+        </member>
+        <member name="M:CliToolSpace.Cli.CheckPause(CliToolSpace.Command,System.Boolean)">
+            <summary>
+            CheckPause modifies Command object to add "and pause" if pause is true.
+            </summary>
+            <param name="cmnd">Command to be modified</param>
+            <param name="pause">Boolean pause adds pause if true</param>
+            <returns></returns>
+        </member>
+        <member name="M:CliToolSpace.CliReader.ReadCommandsFromFile(System.String)">
+            <summary>
+            ReadCommandsFromFile method reads commands from a given bat file/text file, converts to Command object.
+            </summary>
+            <param name="path">Path for file to read</param>
+            <returns>Returns new Command object with commands from file</returns>
+        </member>
+        <member name="M:CliToolSpace.CliReader.StartFile(System.String)">
+            <summary>
+            StartFile method starts file at given path.
+            </summary>
+            <param name="path">Path of file to start</param>
+        </member>
+        <member name="T:CliToolSpace.CliWriter">
+            <summary>
+            CliWriter class holds a library of static methods that interact with the command line using Command objects.
+            </summary>
+        </member>
+        <member name="M:CliToolSpace.CliWriter.CreateFile(System.String)">
+            <summary>
+            Creates a new file if file doesn't exist.
+            </summary>
+            <param name="path">Path to new file</param>
+        </member>
+        <member name="M:CliToolSpace.CliWriter.Log(System.String,System.Boolean)">
+            <summary>
+            Log function logs all information passed through into current_directory/log.txt.
+            </summary>
+            <param name="info">Information to be logged</param>
+            <param name="log">Boolean determining whether to log or not</param>
+            <returns></returns>
+        </member>
+        <member name="M:CliToolSpace.CliWriter.GetTimestamp(System.DateTime)">
+            <summary>
+            GetTimestamp function returns a timestamp for Log and CommandToFile methods.
+            </summary>
+            <param name="now">DateTime object to create time stamp off</param>
+            <returns></returns>
+        </member>
+        <member name="M:CliToolSpace.CliWriter.ParseCommands(CliToolSpace.Command)">
+            <summary>
+            ParseCommands function splits given commands at the - and.
+            </summary>
+            <param name="commands">Command object with commands to be split at - and</param>
+            <returns>Returns a string array of commands</returns>
+        </member>
+        <member name="M:CliToolSpace.CliWriter.CommandToFile(CliToolSpace.Command,System.String,System.Boolean,System.String)">
+            <summary>
+            CommandToFile sends a given Command object to a specified file
+            </summary>
+            <param name="commands">Command object to be sent to file</param>
+            <param name="directory">Directory to write file to</param>
+            <param name="log">Boolean determines whether log should be written to</param>
+            <param name="filename">Name of file to be written to</param>
+        </member>
+        <member name="T:CliToolSpace.Command">
+            <summary>
+            Command class holds commands to be executed by command line.
+            </summary>
+        </member>
+        <member name="M:CliToolSpace.Command.#ctor(System.String,System.Boolean)">
+            <summary>
+            Constructor for Command object with parameters.
+            </summary>
+            <param name="command">String of batch file code</param>
+            <param name="hidden">Boolean that toggles the visibility of script execution</param>
+        </member>
+        <member name="M:CliToolSpace.Command.#ctor">
+            <summary>
+            Default constructor for Command object, usually used if default object is needed.
+            </summary>
+        </member>
+        <member name="M:CliToolSpace.Command.ToString">
+            <summary>
+            Overridden ToString method for Command object.
+            </summary>
+            <returns>Returns the command this Command object is storing</returns>
+        </member>
+        <member name="M:CliToolSpace.Command.IsCorrectFormat(System.String)">
+            <summary>
+            IsCorrectFormat method determines whether a command begins with a /C so that it is executable.
+            </summary>
+            <param name="_command">Command to be tested</param>
+            <returns>Returns true if is correct format</returns>
+        </member>
+        <member name="M:CliToolSpace.Command.Format">
+            <summary>
+            Private Format method formats a command by adding /C at front.
+            </summary>
+        </member>
+        <member name="M:CliToolSpace.Command.Format(System.String)">
+            <summary>
+            Public Format method creates a new Command object and runs private Format method. Static method to enable "Command.Format(arg)" functionality.
+            </summary>
+            <param name="command">Command to be formatted</param>
+            <returns>Returns formatted command</returns>
+        </member>
+        <member name="P:CliToolSpace.Command.Hidden">
+            <summary>
+            Hidden parameter getter and setter.
+            </summary>
+        </member>
+        <member name="M:CliToolSpace.Command.setCommand(System.String)">
+            <summary>
+            Setter for the command parameter.
+            </summary>
+            <param name="oCmnd">Other command to replace current command</param>
+        </member>
+        <member name="M:CliToolSpace.Command.GetCommand">
+            <summary>
+            Getter for the command parameter.
+            </summary>
+        </member>
+        <member name="M:CliToolSpace.Command.AddPause">
+            <summary>
+            AddPause method adds an - and pause - to any command
+            </summary>
+            <returns>Returns this command object</returns>
+        </member>
+        <member name="M:CliToolSpace.Command.op_Addition(CliToolSpace.Command,CliToolSpace.Command)">
+            <summary>
+            Command overloaded + operator concatenates two Command objects by using the and operator. Command a executes to completion before b.
+            </summary>
+            <param name="alp">Command to be executed first</param>
+            <param name="blp">Command to be executed second</param>
+            <returns>Returns a new command object with both commands</returns>
+        </member>
+        <member name="M:CliToolSpace.Command.Append(CliToolSpace.Command,CliToolSpace.Command)">
+            <summary>
+            Append method directly adds (using - and) the command parameter of one command(rhs) to another(lhs).
+            </summary>
+            <param name="iCommand">Command to be appended to</param>
+            <param name="oCommand">Command to be appended</param>
+            <returns>Returns Command object with both command parameters appended</returns>
+        </member>
+    </members>
+</doc>
