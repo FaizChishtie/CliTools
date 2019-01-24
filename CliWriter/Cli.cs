@@ -132,7 +132,6 @@ namespace CliToolSpace
             Console.WriteLine($"Commands executed \nTime elapsed: {elapsedTime}");
         }
 
-
         /// <summary>
         /// Execute method executes a given command. Calls Hidden or Visible based on the boolean value of command.
         /// </summary>

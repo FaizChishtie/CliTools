@@ -154,6 +154,14 @@ namespace CliToolSpace
             return iCommand;
         }
 
+        /// <summary>
+        /// AddStoreOutput appends filename to end of command to store the contents of it's output. Will store file in current directory.
+        /// </summary>
+        /// <param name="filename">File to write to</param>
+        public void AddStoreOutput(string filename)
+        {
+            command += "> " + filename;
+        }
 
     }
 
