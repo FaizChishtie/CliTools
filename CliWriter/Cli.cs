@@ -45,7 +45,7 @@ namespace CliToolSpace
         private Command ToCommand()
         {
             Command tmp = (Command)cmndAL[0];
-            for (int i = 1; i < cmndAL.Count - 1; i++)
+            for (int i = 1; i < cmndAL.Count; i++)
             {
                 tmp += (Command)cmndAL[i];
             }
