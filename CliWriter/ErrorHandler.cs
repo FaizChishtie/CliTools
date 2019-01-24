@@ -22,6 +22,18 @@ namespace CliToolSpace
                 throw new ArgumentNullException("Path null or empty");
             }
         }
+
+        /// <summary>
+        /// ALElementsCheck method checks if ArrayList is null or empty
+        /// </summary>
+        /// <param name="AL">ArrayList to be checked</param>
+        public static void ALElementsCheck(ArrayList AL)
+        {
+            if(AL.Count < 1)
+            {
+                throw new InvalidOperationException("No commands stored in ArrayList");
+            }
+        }
     }
 
 }

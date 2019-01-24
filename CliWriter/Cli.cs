@@ -44,6 +44,7 @@ namespace CliToolSpace
         /// <returns>Returns a Command object</returns>
         private Command ToCommand()
         {
+            ErrorHandler.ALElementsCheck();
             Command tmp = (Command)cmndAL[0];
             for (int i = 1; i < cmndAL.Count; i++)
             {
