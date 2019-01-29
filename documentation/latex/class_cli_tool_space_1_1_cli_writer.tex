@@ -1,0 +1,66 @@
+\hypertarget{class_cli_tool_space_1_1_cli_writer}{}\section{Cli\+Tool\+Space.\+Cli\+Writer Class Reference}
+\label{class_cli_tool_space_1_1_cli_writer}\index{CliToolSpace.CliWriter@{CliToolSpace.CliWriter}}
+
+
+\mbox{\hyperlink{class_cli_tool_space_1_1_cli_writer}{Cli\+Writer}} class holds a library of static methods that interact with the command line using \mbox{\hyperlink{class_cli_tool_space_1_1_command}{Command}} objects.  
+
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static string \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_cli_tool_space_1_1_cli_writer_a7c587bdbc44db571a9e95db4465d31ee}{Parse\+Commands}} (\mbox{\hyperlink{class_cli_tool_space_1_1_command}{Command}} commands)
+\begin{DoxyCompactList}\small\item\em Parse\+Commands function splits given commands at the -\/ and. \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_cli_tool_space_1_1_cli_writer_ad29fa767b7b1503aeef2a2353ccde068}{Command\+To\+File}} (\mbox{\hyperlink{class_cli_tool_space_1_1_command}{Command}} commands, string directory, bool log=true, string filename=\char`\"{}cli\+\_\+generated\+\_\+commands.\+txt\char`\"{})
+\begin{DoxyCompactList}\small\item\em Command\+To\+File sends a given \mbox{\hyperlink{class_cli_tool_space_1_1_command}{Command}} object to a specified file \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_cli_tool_space_1_1_cli_writer}{Cli\+Writer}} class holds a library of static methods that interact with the command line using \mbox{\hyperlink{class_cli_tool_space_1_1_command}{Command}} objects. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_cli_tool_space_1_1_cli_writer_ad29fa767b7b1503aeef2a2353ccde068}\label{class_cli_tool_space_1_1_cli_writer_ad29fa767b7b1503aeef2a2353ccde068}} 
+\index{CliToolSpace.CliWriter@{CliToolSpace.CliWriter}!CommandToFile@{CommandToFile}}
+\index{CommandToFile@{CommandToFile}!CliToolSpace.CliWriter@{CliToolSpace.CliWriter}}
+\subsubsection{\texorpdfstring{CommandToFile()}{CommandToFile()}}
+{\footnotesize\ttfamily static void Cli\+Tool\+Space.\+Cli\+Writer.\+Command\+To\+File (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cli_tool_space_1_1_command}{Command}}}]{commands,  }\item[{string}]{directory,  }\item[{bool}]{log = {\ttfamily true},  }\item[{string}]{filename = {\ttfamily \char`\"{}cli\+\_\+generated\+\_\+commands.txt\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Command\+To\+File sends a given \mbox{\hyperlink{class_cli_tool_space_1_1_command}{Command}} object to a specified file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em commands} & \mbox{\hyperlink{class_cli_tool_space_1_1_command}{Command}} object to be sent to file\\
+\hline
+{\em directory} & Directory to write file to\\
+\hline
+{\em log} & Boolean determines whether log should be written to\\
+\hline
+{\em filename} & Name of file to be written to\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cli_tool_space_1_1_cli_writer_a7c587bdbc44db571a9e95db4465d31ee}\label{class_cli_tool_space_1_1_cli_writer_a7c587bdbc44db571a9e95db4465d31ee}} 
+\index{CliToolSpace.CliWriter@{CliToolSpace.CliWriter}!ParseCommands@{ParseCommands}}
+\index{ParseCommands@{ParseCommands}!CliToolSpace.CliWriter@{CliToolSpace.CliWriter}}
+\subsubsection{\texorpdfstring{ParseCommands()}{ParseCommands()}}
+{\footnotesize\ttfamily static string \mbox{[}$\,$\mbox{]} Cli\+Tool\+Space.\+Cli\+Writer.\+Parse\+Commands (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cli_tool_space_1_1_command}{Command}}}]{commands }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Parse\+Commands function splits given commands at the -\/ and. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em commands} & \mbox{\hyperlink{class_cli_tool_space_1_1_command}{Command}} object with commands to be split at -\/ and\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a string array of commands
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cli\+Writer/\mbox{\hyperlink{_cli_writer_8cs}{Cli\+Writer.\+cs}}\end{DoxyCompactItemize}

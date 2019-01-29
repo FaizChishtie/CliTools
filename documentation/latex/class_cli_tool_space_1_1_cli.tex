@@ -1,0 +1,169 @@
+\hypertarget{class_cli_tool_space_1_1_cli}{}\section{Cli\+Tool\+Space.\+Cli Class Reference}
+\label{class_cli_tool_space_1_1_cli}\index{CliToolSpace.Cli@{CliToolSpace.Cli}}
+
+
+ 
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_cli_tool_space_1_1_cli_a063243e835cc8e87c67e2d1da0310572}{Cli}} ()
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{class_cli_tool_space_1_1_cli}{Cli}} class, initializes Array\+List \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cli_tool_space_1_1_cli_a967aa1e2dc3b03e32b8373cbccab922c}{Store\+Command}} (\mbox{\hyperlink{class_cli_tool_space_1_1_command}{Command}} cmnd)
+\begin{DoxyCompactList}\small\item\em Store\+Command method adds command to Array\+List \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cli_tool_space_1_1_cli_a20d3ab2d3b6ddc56c74bf3a5dc98fd4d}{To\+File}} (string directory, bool log=true, string filename=\char`\"{}out.\+bat\char`\"{})
+\begin{DoxyCompactList}\small\item\em To\+File takes current Array\+List and converts it to a file \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cli_tool_space_1_1_cli_a8623bb3d3133538db1d87d42bda874f2}{File\+To\+Cli}} (string path)
+\begin{DoxyCompactList}\small\item\em File\+To\+Cli parses a file to \mbox{\hyperlink{class_cli_tool_space_1_1_cli}{Cli}} Array\+List \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cli_tool_space_1_1_cli_a8a2edf2f70eeb1ca7baae4d92e0a9ee5}{Execute}} (bool pause=false)
+\begin{DoxyCompactList}\small\item\em Execute method executes commands from cmnd\+AL. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_cli_tool_space_1_1_command}{Command}} \mbox{\hyperlink{class_cli_tool_space_1_1_cli_a8d79672635592ff610653189fd7e6d15}{cd}} (string directory)
+\begin{DoxyCompactList}\small\item\em cd command acts as actual cd command in cli. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_cli_tool_space_1_1_command}{Command}} \mbox{\hyperlink{class_cli_tool_space_1_1_cli_abea5ac9db69f60d7cec5103565873ae1}{ls}} ()
+\begin{DoxyCompactList}\small\item\em ls command acts like dir in cli \end{DoxyCompactList}\item 
+static void \mbox{\hyperlink{class_cli_tool_space_1_1_cli_a0e3c1975671466f8f2c8924c95f0b883}{Execute\+Individual}} (\mbox{\hyperlink{class_cli_tool_space_1_1_command}{Command}} cmnd, bool pause=true)
+\begin{DoxyCompactList}\small\item\em Execute method executes a given command. Calls Hidden or Visible based on the boolean value of command. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_cli_tool_space_1_1_cli_a063243e835cc8e87c67e2d1da0310572}\label{class_cli_tool_space_1_1_cli_a063243e835cc8e87c67e2d1da0310572}} 
+\index{CliToolSpace.Cli@{CliToolSpace.Cli}!Cli@{Cli}}
+\index{Cli@{Cli}!CliToolSpace.Cli@{CliToolSpace.Cli}}
+\subsubsection{\texorpdfstring{Cli()}{Cli()}}
+{\footnotesize\ttfamily Cli\+Tool\+Space.\+Cli.\+Cli (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor for \mbox{\hyperlink{class_cli_tool_space_1_1_cli}{Cli}} class, initializes Array\+List 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_cli_tool_space_1_1_cli_a8d79672635592ff610653189fd7e6d15}\label{class_cli_tool_space_1_1_cli_a8d79672635592ff610653189fd7e6d15}} 
+\index{CliToolSpace.Cli@{CliToolSpace.Cli}!cd@{cd}}
+\index{cd@{cd}!CliToolSpace.Cli@{CliToolSpace.Cli}}
+\subsubsection{\texorpdfstring{cd()}{cd()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_cli_tool_space_1_1_command}{Command}} Cli\+Tool\+Space.\+Cli.\+cd (\begin{DoxyParamCaption}\item[{string}]{directory }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+cd command acts as actual cd command in cli. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em directory} & Directory to navigate to\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns new command object with command for executability.
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cli_tool_space_1_1_cli_a8a2edf2f70eeb1ca7baae4d92e0a9ee5}\label{class_cli_tool_space_1_1_cli_a8a2edf2f70eeb1ca7baae4d92e0a9ee5}} 
+\index{CliToolSpace.Cli@{CliToolSpace.Cli}!Execute@{Execute}}
+\index{Execute@{Execute}!CliToolSpace.Cli@{CliToolSpace.Cli}}
+\subsubsection{\texorpdfstring{Execute()}{Execute()}}
+{\footnotesize\ttfamily void Cli\+Tool\+Space.\+Cli.\+Execute (\begin{DoxyParamCaption}\item[{bool}]{pause = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Execute method executes commands from cmnd\+AL. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmnd} & \mbox{\hyperlink{class_cli_tool_space_1_1_command}{Command}} object to be executed\\
+\hline
+{\em pause} & Boolean adds pause at the end of execution if true\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cli_tool_space_1_1_cli_a0e3c1975671466f8f2c8924c95f0b883}\label{class_cli_tool_space_1_1_cli_a0e3c1975671466f8f2c8924c95f0b883}} 
+\index{CliToolSpace.Cli@{CliToolSpace.Cli}!ExecuteIndividual@{ExecuteIndividual}}
+\index{ExecuteIndividual@{ExecuteIndividual}!CliToolSpace.Cli@{CliToolSpace.Cli}}
+\subsubsection{\texorpdfstring{ExecuteIndividual()}{ExecuteIndividual()}}
+{\footnotesize\ttfamily static void Cli\+Tool\+Space.\+Cli.\+Execute\+Individual (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cli_tool_space_1_1_command}{Command}}}]{cmnd,  }\item[{bool}]{pause = {\ttfamily true} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Execute method executes a given command. Calls Hidden or Visible based on the boolean value of command. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmnd} & \mbox{\hyperlink{class_cli_tool_space_1_1_command}{Command}} object to be executed\\
+\hline
+{\em pause} & Boolean adds pause at the end of execution if true\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cli_tool_space_1_1_cli_a8623bb3d3133538db1d87d42bda874f2}\label{class_cli_tool_space_1_1_cli_a8623bb3d3133538db1d87d42bda874f2}} 
+\index{CliToolSpace.Cli@{CliToolSpace.Cli}!FileToCli@{FileToCli}}
+\index{FileToCli@{FileToCli}!CliToolSpace.Cli@{CliToolSpace.Cli}}
+\subsubsection{\texorpdfstring{FileToCli()}{FileToCli()}}
+{\footnotesize\ttfamily void Cli\+Tool\+Space.\+Cli.\+File\+To\+Cli (\begin{DoxyParamCaption}\item[{string}]{path }\end{DoxyParamCaption})}
+
+
+
+File\+To\+Cli parses a file to \mbox{\hyperlink{class_cli_tool_space_1_1_cli}{Cli}} Array\+List 
+
+
+\begin{DoxyParams}{Parameters}
+{\em path} & Path to given file\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cli_tool_space_1_1_cli_abea5ac9db69f60d7cec5103565873ae1}\label{class_cli_tool_space_1_1_cli_abea5ac9db69f60d7cec5103565873ae1}} 
+\index{CliToolSpace.Cli@{CliToolSpace.Cli}!ls@{ls}}
+\index{ls@{ls}!CliToolSpace.Cli@{CliToolSpace.Cli}}
+\subsubsection{\texorpdfstring{ls()}{ls()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_cli_tool_space_1_1_command}{Command}} Cli\+Tool\+Space.\+Cli.\+ls (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+ls command acts like dir in cli 
+
+\begin{DoxyReturn}{Returns}
+Returns new command object with command
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cli_tool_space_1_1_cli_a967aa1e2dc3b03e32b8373cbccab922c}\label{class_cli_tool_space_1_1_cli_a967aa1e2dc3b03e32b8373cbccab922c}} 
+\index{CliToolSpace.Cli@{CliToolSpace.Cli}!StoreCommand@{StoreCommand}}
+\index{StoreCommand@{StoreCommand}!CliToolSpace.Cli@{CliToolSpace.Cli}}
+\subsubsection{\texorpdfstring{StoreCommand()}{StoreCommand()}}
+{\footnotesize\ttfamily void Cli\+Tool\+Space.\+Cli.\+Store\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cli_tool_space_1_1_command}{Command}}}]{cmnd }\end{DoxyParamCaption})}
+
+
+
+Store\+Command method adds command to Array\+List 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cmnd} & \mbox{\hyperlink{class_cli_tool_space_1_1_command}{Command}} to be added to Array\+List\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cli_tool_space_1_1_cli_a20d3ab2d3b6ddc56c74bf3a5dc98fd4d}\label{class_cli_tool_space_1_1_cli_a20d3ab2d3b6ddc56c74bf3a5dc98fd4d}} 
+\index{CliToolSpace.Cli@{CliToolSpace.Cli}!ToFile@{ToFile}}
+\index{ToFile@{ToFile}!CliToolSpace.Cli@{CliToolSpace.Cli}}
+\subsubsection{\texorpdfstring{ToFile()}{ToFile()}}
+{\footnotesize\ttfamily void Cli\+Tool\+Space.\+Cli.\+To\+File (\begin{DoxyParamCaption}\item[{string}]{directory,  }\item[{bool}]{log = {\ttfamily true},  }\item[{string}]{filename = {\ttfamily \char`\"{}out.bat\char`\"{}} }\end{DoxyParamCaption})}
+
+
+
+To\+File takes current Array\+List and converts it to a file 
+
+
+\begin{DoxyParams}{Parameters}
+{\em directory} & Directory to store file\\
+\hline
+{\em log} & Boolean to determine if action is to be logged\\
+\hline
+{\em filename} & Filename to write to\\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cli\+Writer/\mbox{\hyperlink{_cli_8cs}{Cli.\+cs}}\end{DoxyCompactItemize}

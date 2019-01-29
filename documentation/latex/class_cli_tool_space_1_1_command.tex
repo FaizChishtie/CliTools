@@ -1,0 +1,218 @@
+\hypertarget{class_cli_tool_space_1_1_command}{}\section{Cli\+Tool\+Space.\+Command Class Reference}
+\label{class_cli_tool_space_1_1_command}\index{CliToolSpace.Command@{CliToolSpace.Command}}
+
+
+\mbox{\hyperlink{class_cli_tool_space_1_1_command}{Command}} class holds commands to be executed by command line.  
+
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_cli_tool_space_1_1_command_ab93496803937b79918c2a63b15df7e4b}{Command}} (string command, bool hidden=false)
+\begin{DoxyCompactList}\small\item\em Constructor for \mbox{\hyperlink{class_cli_tool_space_1_1_command}{Command}} object with parameters. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_cli_tool_space_1_1_command_af62f9e2db8cd415370496f8dbec63b0e}{Command}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for \mbox{\hyperlink{class_cli_tool_space_1_1_command}{Command}} object, usually used if default object is needed. \end{DoxyCompactList}\item 
+override string \mbox{\hyperlink{class_cli_tool_space_1_1_command_a0eb86154a0dd76853a440baec69c406d}{To\+String}} ()
+\begin{DoxyCompactList}\small\item\em Overridden To\+String method for \mbox{\hyperlink{class_cli_tool_space_1_1_command}{Command}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cli_tool_space_1_1_command_a81c6eafab4f24091f8cb795b1bc50a17}{set\+Command}} (string o\+Cmnd)
+\begin{DoxyCompactList}\small\item\em Setter for the command parameter. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_cli_tool_space_1_1_command_a6580ca3f6b4ad7f4be3dfc968e317c20}{Get\+Command}} ()
+\begin{DoxyCompactList}\small\item\em Getter for the command parameter. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_cli_tool_space_1_1_command}{Command}} \mbox{\hyperlink{class_cli_tool_space_1_1_command_a9e3b37320d8980e4c1e83eb109f486e5}{Add\+Pause}} ()
+\begin{DoxyCompactList}\small\item\em Add\+Pause method adds an -\/ and pause -\/ to any command \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_cli_tool_space_1_1_command_aa49e056d4052177768a13fac33991942}{Add\+Store\+Output}} (string filename)
+\begin{DoxyCompactList}\small\item\em Add\+Store\+Output appends filename to end of command to store the contents of it\textquotesingle{}s output. Will store file in current directory. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static string \mbox{\hyperlink{class_cli_tool_space_1_1_command_a87f5cf560c99e6336acdb34d7f20e00a}{Format}} (string command)
+\begin{DoxyCompactList}\small\item\em Public Format method creates a new \mbox{\hyperlink{class_cli_tool_space_1_1_command}{Command}} object and runs private Format method. Static method to enable \char`\"{}\+Command.\+Format(arg)\char`\"{} functionality. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_cli_tool_space_1_1_command}{Command}} \mbox{\hyperlink{class_cli_tool_space_1_1_command_a2138b4c3df7aeee1aee67a188ff514b4}{operator+}} (\mbox{\hyperlink{class_cli_tool_space_1_1_command}{Command}} alp, \mbox{\hyperlink{class_cli_tool_space_1_1_command}{Command}} blp)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_cli_tool_space_1_1_command}{Command}} overloaded + operator concatenates two \mbox{\hyperlink{class_cli_tool_space_1_1_command}{Command}} objects by using the and operator. \mbox{\hyperlink{class_cli_tool_space_1_1_command}{Command}} a executes to completion before b. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{class_cli_tool_space_1_1_command}{Command}} \mbox{\hyperlink{class_cli_tool_space_1_1_command_a9299086e0a3a63da064734d3169d5b2f}{Append}} (\mbox{\hyperlink{class_cli_tool_space_1_1_command}{Command}} i\+Command, \mbox{\hyperlink{class_cli_tool_space_1_1_command}{Command}} o\+Command)
+\begin{DoxyCompactList}\small\item\em Append method directly adds (using -\/ and) the command parameter of one command(rhs) to another(lhs). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_cli_tool_space_1_1_command_a10f729897c950d77df6588c63845280b}{Hidden}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Hidden parameter getter and setter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\mbox{\hyperlink{class_cli_tool_space_1_1_command}{Command}} class holds commands to be executed by command line. 
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_cli_tool_space_1_1_command_ab93496803937b79918c2a63b15df7e4b}\label{class_cli_tool_space_1_1_command_ab93496803937b79918c2a63b15df7e4b}} 
+\index{CliToolSpace.Command@{CliToolSpace.Command}!Command@{Command}}
+\index{Command@{Command}!CliToolSpace.Command@{CliToolSpace.Command}}
+\subsubsection{\texorpdfstring{Command()}{Command()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Cli\+Tool\+Space.\+Command.\+Command (\begin{DoxyParamCaption}\item[{string}]{command,  }\item[{bool}]{hidden = {\ttfamily false} }\end{DoxyParamCaption})}
+
+
+
+Constructor for \mbox{\hyperlink{class_cli_tool_space_1_1_command}{Command}} object with parameters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em command} & String of batch file code\\
+\hline
+{\em hidden} & Boolean that toggles the visibility of script execution\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cli_tool_space_1_1_command_af62f9e2db8cd415370496f8dbec63b0e}\label{class_cli_tool_space_1_1_command_af62f9e2db8cd415370496f8dbec63b0e}} 
+\index{CliToolSpace.Command@{CliToolSpace.Command}!Command@{Command}}
+\index{Command@{Command}!CliToolSpace.Command@{CliToolSpace.Command}}
+\subsubsection{\texorpdfstring{Command()}{Command()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Cli\+Tool\+Space.\+Command.\+Command (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor for \mbox{\hyperlink{class_cli_tool_space_1_1_command}{Command}} object, usually used if default object is needed. 
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_cli_tool_space_1_1_command_a9e3b37320d8980e4c1e83eb109f486e5}\label{class_cli_tool_space_1_1_command_a9e3b37320d8980e4c1e83eb109f486e5}} 
+\index{CliToolSpace.Command@{CliToolSpace.Command}!AddPause@{AddPause}}
+\index{AddPause@{AddPause}!CliToolSpace.Command@{CliToolSpace.Command}}
+\subsubsection{\texorpdfstring{AddPause()}{AddPause()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_cli_tool_space_1_1_command}{Command}} Cli\+Tool\+Space.\+Command.\+Add\+Pause (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Add\+Pause method adds an -\/ and pause -\/ to any command 
+
+\begin{DoxyReturn}{Returns}
+Returns this command object
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cli_tool_space_1_1_command_aa49e056d4052177768a13fac33991942}\label{class_cli_tool_space_1_1_command_aa49e056d4052177768a13fac33991942}} 
+\index{CliToolSpace.Command@{CliToolSpace.Command}!AddStoreOutput@{AddStoreOutput}}
+\index{AddStoreOutput@{AddStoreOutput}!CliToolSpace.Command@{CliToolSpace.Command}}
+\subsubsection{\texorpdfstring{AddStoreOutput()}{AddStoreOutput()}}
+{\footnotesize\ttfamily void Cli\+Tool\+Space.\+Command.\+Add\+Store\+Output (\begin{DoxyParamCaption}\item[{string}]{filename }\end{DoxyParamCaption})}
+
+
+
+Add\+Store\+Output appends filename to end of command to store the contents of it\textquotesingle{}s output. Will store file in current directory. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & File to write to\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cli_tool_space_1_1_command_a9299086e0a3a63da064734d3169d5b2f}\label{class_cli_tool_space_1_1_command_a9299086e0a3a63da064734d3169d5b2f}} 
+\index{CliToolSpace.Command@{CliToolSpace.Command}!Append@{Append}}
+\index{Append@{Append}!CliToolSpace.Command@{CliToolSpace.Command}}
+\subsubsection{\texorpdfstring{Append()}{Append()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_cli_tool_space_1_1_command}{Command}} Cli\+Tool\+Space.\+Command.\+Append (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cli_tool_space_1_1_command}{Command}}}]{i\+Command,  }\item[{\mbox{\hyperlink{class_cli_tool_space_1_1_command}{Command}}}]{o\+Command }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Append method directly adds (using -\/ and) the command parameter of one command(rhs) to another(lhs). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em i\+Command} & \mbox{\hyperlink{class_cli_tool_space_1_1_command}{Command}} to be appended to\\
+\hline
+{\em o\+Command} & \mbox{\hyperlink{class_cli_tool_space_1_1_command}{Command}} to be appended\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns \mbox{\hyperlink{class_cli_tool_space_1_1_command}{Command}} object with both command parameters appended
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cli_tool_space_1_1_command_a87f5cf560c99e6336acdb34d7f20e00a}\label{class_cli_tool_space_1_1_command_a87f5cf560c99e6336acdb34d7f20e00a}} 
+\index{CliToolSpace.Command@{CliToolSpace.Command}!Format@{Format}}
+\index{Format@{Format}!CliToolSpace.Command@{CliToolSpace.Command}}
+\subsubsection{\texorpdfstring{Format()}{Format()}}
+{\footnotesize\ttfamily static string Cli\+Tool\+Space.\+Command.\+Format (\begin{DoxyParamCaption}\item[{string}]{command }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Public Format method creates a new \mbox{\hyperlink{class_cli_tool_space_1_1_command}{Command}} object and runs private Format method. Static method to enable \char`\"{}\+Command.\+Format(arg)\char`\"{} functionality. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em command} & \mbox{\hyperlink{class_cli_tool_space_1_1_command}{Command}} to be formatted\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns formatted command
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cli_tool_space_1_1_command_a6580ca3f6b4ad7f4be3dfc968e317c20}\label{class_cli_tool_space_1_1_command_a6580ca3f6b4ad7f4be3dfc968e317c20}} 
+\index{CliToolSpace.Command@{CliToolSpace.Command}!GetCommand@{GetCommand}}
+\index{GetCommand@{GetCommand}!CliToolSpace.Command@{CliToolSpace.Command}}
+\subsubsection{\texorpdfstring{GetCommand()}{GetCommand()}}
+{\footnotesize\ttfamily string Cli\+Tool\+Space.\+Command.\+Get\+Command (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Getter for the command parameter. 
+
+\mbox{\Hypertarget{class_cli_tool_space_1_1_command_a2138b4c3df7aeee1aee67a188ff514b4}\label{class_cli_tool_space_1_1_command_a2138b4c3df7aeee1aee67a188ff514b4}} 
+\index{CliToolSpace.Command@{CliToolSpace.Command}!operator+@{operator+}}
+\index{operator+@{operator+}!CliToolSpace.Command@{CliToolSpace.Command}}
+\subsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{class_cli_tool_space_1_1_command}{Command}} Cli\+Tool\+Space.\+Command.\+operator+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_cli_tool_space_1_1_command}{Command}}}]{alp,  }\item[{\mbox{\hyperlink{class_cli_tool_space_1_1_command}{Command}}}]{blp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+\mbox{\hyperlink{class_cli_tool_space_1_1_command}{Command}} overloaded + operator concatenates two \mbox{\hyperlink{class_cli_tool_space_1_1_command}{Command}} objects by using the and operator. \mbox{\hyperlink{class_cli_tool_space_1_1_command}{Command}} a executes to completion before b. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em alp} & \mbox{\hyperlink{class_cli_tool_space_1_1_command}{Command}} to be executed first\\
+\hline
+{\em blp} & \mbox{\hyperlink{class_cli_tool_space_1_1_command}{Command}} to be executed second\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns a new command object with both commands
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_cli_tool_space_1_1_command_a81c6eafab4f24091f8cb795b1bc50a17}\label{class_cli_tool_space_1_1_command_a81c6eafab4f24091f8cb795b1bc50a17}} 
+\index{CliToolSpace.Command@{CliToolSpace.Command}!setCommand@{setCommand}}
+\index{setCommand@{setCommand}!CliToolSpace.Command@{CliToolSpace.Command}}
+\subsubsection{\texorpdfstring{setCommand()}{setCommand()}}
+{\footnotesize\ttfamily void Cli\+Tool\+Space.\+Command.\+set\+Command (\begin{DoxyParamCaption}\item[{string}]{o\+Cmnd }\end{DoxyParamCaption})}
+
+
+
+Setter for the command parameter. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em o\+Cmnd} & Other command to replace current command\\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_cli_tool_space_1_1_command_a0eb86154a0dd76853a440baec69c406d}\label{class_cli_tool_space_1_1_command_a0eb86154a0dd76853a440baec69c406d}} 
+\index{CliToolSpace.Command@{CliToolSpace.Command}!ToString@{ToString}}
+\index{ToString@{ToString}!CliToolSpace.Command@{CliToolSpace.Command}}
+\subsubsection{\texorpdfstring{ToString()}{ToString()}}
+{\footnotesize\ttfamily override string Cli\+Tool\+Space.\+Command.\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Overridden To\+String method for \mbox{\hyperlink{class_cli_tool_space_1_1_command}{Command}} object. 
+
+\begin{DoxyReturn}{Returns}
+Returns the command this \mbox{\hyperlink{class_cli_tool_space_1_1_command}{Command}} object is storing
+\end{DoxyReturn}
+
+
+\subsection{Property Documentation}
+\mbox{\Hypertarget{class_cli_tool_space_1_1_command_a10f729897c950d77df6588c63845280b}\label{class_cli_tool_space_1_1_command_a10f729897c950d77df6588c63845280b}} 
+\index{CliToolSpace.Command@{CliToolSpace.Command}!Hidden@{Hidden}}
+\index{Hidden@{Hidden}!CliToolSpace.Command@{CliToolSpace.Command}}
+\subsubsection{\texorpdfstring{Hidden}{Hidden}}
+{\footnotesize\ttfamily bool Cli\+Tool\+Space.\+Command.\+Hidden\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Hidden parameter getter and setter. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Cli\+Writer/\mbox{\hyperlink{_command_8cs}{Command.\+cs}}\end{DoxyCompactItemize}

@@ -16,6 +16,7 @@ namespace CliToolSpace
     class Cli
     {
         ArrayList cmndAL; //stores all commands in AL
+        bool admin; 
 
         //COMMAND STORAGE
 
@@ -25,6 +26,17 @@ namespace CliToolSpace
         public Cli()
         {
             cmndAL = new ArrayList();
+            admin = false;
+        }
+
+
+        /// <summary>
+        /// Constructor for Cli class, initializes ArrayList. Bool determines whether to start process as adminisirator or not.
+        /// </summary>
+        public Cli(bool admin)
+        {
+            cmndAL = new ArrayList();
+            this.admin = admin;
         }
 
 
@@ -163,7 +175,7 @@ namespace CliToolSpace
 
 
         /// <summary>
-        /// ExecuteCommandHidden hides cmd when executing command.
+        /// ExecuteCommandHidden hides cmd when executing command. If admin then add verb.
         /// </summary>
         /// <param name="cmnd">Command object to be executed</param>
         /// <param name="pause">Boolean adds pause at the end of execution if true</param>
@@ -175,6 +187,10 @@ namespace CliToolSpace
             startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden;
             startInfo.FileName = "cmd.exe";
             startInfo.Arguments = cmnd.ToString();
+            if (admin)
+            {
+                startInfo.Verb = "runas";
+            }
             process.StartInfo = startInfo;
             process.Start();
         }
@@ -187,8 +203,18 @@ namespace CliToolSpace
         /// <param name="pause">Boolean adds pause at the end of execution if true</param>
         private static void ExecuteCommandVisible(Command cmnd, bool pause = true)
         {
-            CheckPause(cmnd, pause);
-            System.Diagnostics.Process.Start("CMD.exe", cmnd.ToString());
+            CheckPause(cmnd, pause); // adds pause if true
+            System.Diagnostics.Process process = new System.Diagnostics.Process();
+            System.Diagnostics.ProcessStartInfo startInfo = new System.Diagnostics.ProcessStartInfo();
+            startInfo.WindowStyle = System.Diagnostics.ProcessWindowStyle.Normal;
+            startInfo.FileName = "cmd.exe";
+            startInfo.Arguments = cmnd.ToString();
+            if (admin)
+            {
+                startInfo.Verb = "runas";
+            }
+            process.StartInfo = startInfo;
+            process.Start();
         }
 
 
