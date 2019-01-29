@@ -150,7 +150,7 @@ namespace CliToolSpace
         /// </summary>
         /// <param name="cmnd">Command object to be executed</param>
         /// <param name="pause">Boolean adds pause at the end of execution if true</param>
-        public static void ExecuteIndividual(Command cmnd, bool pause = true)
+        public void ExecuteIndividual(Command cmnd, bool pause = true)
         {
             Stopwatch stopWatch = new Stopwatch();
             stopWatch.Start();
@@ -179,7 +179,7 @@ namespace CliToolSpace
         /// </summary>
         /// <param name="cmnd">Command object to be executed</param>
         /// <param name="pause">Boolean adds pause at the end of execution if true</param>
-        private static void ExecuteCommandHidden(Command cmnd, bool pause = true)
+        private void ExecuteCommandHidden(Command cmnd, bool pause = true)
         {
             CheckPause(cmnd, pause); // adds pause if true
             System.Diagnostics.Process process = new System.Diagnostics.Process();
@@ -201,7 +201,7 @@ namespace CliToolSpace
         /// </summary>
         /// <param name="cmnd">Command object to be executed</param>
         /// <param name="pause">Boolean adds pause at the end of execution if true</param>
-        private static void ExecuteCommandVisible(Command cmnd, bool pause = true)
+        private void ExecuteCommandVisible(Command cmnd, bool pause = true)
         {
             CheckPause(cmnd, pause); // adds pause if true
             System.Diagnostics.Process process = new System.Diagnostics.Process();
